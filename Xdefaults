@@ -1,0 +1,90 @@
+urxvt*borderLess: false
+urxvt.saveLines: 10000
+urxvt.scrollBar: false
+urxvt.secondaryScroll: true
+#urxvt.font: xft:ProggySquareTTSZ:pixelsize=18:antialias=true
+#urxvt.boldFont: xft:ProggySquareTTSZ:pixelsize=18:antialias=true
+URxvt.font: xft:terminus:size=12:antialias=true
+URxvt.boldFont: xft:terminus:bold:size=12:antialias=true
+urxvt.urlLauncher: firefox
+urxvt.depth: 32
+urxvt.tint: black
+
+urxvt.keysym.C-Tab:	\033<C-Tab>
+
+! Colors
+#URxvt*cursorColor: #d3d7cf
+#URxvt*background: #2e3436
+#URxvt*foreground: #eeeeec
+! Black
+#URxvt*color0: #2e2326
+#URxvt*color8: #555753
+! Red
+#URxvt*color1: #CC0000
+#URxvt*color9: #ef2929
+! Green
+#URxvt*color2: #73d216
+#URxvt*color10: #8ae234
+! Yellow
+#URxvt*color3: #edd400
+#URxvt*color11: #fce94f
+! Blue
+#URxvt*color4: #3465a4
+#URxvt*color12: #729fcf
+! Magenta
+#URxvt*color5: #75507b
+#URxvt*color13: #ad7fa8
+! Cyan
+#URxvt*color6: #00AAAA
+#URxvt*color14: #55FFFF
+! White
+#URxvt*color7: #AAAAAA
+#URxvt*color15: #FFFFFF
+
+*background:     #121212
+!black
+*color0:         #353535
+*color8:         #666666
+!red
+*color1:         #AE4747
+*color9:         #EE6363
+!green
+*color2:         #556B2F
+*color10:        #9ACD32
+!brown/yellow
+*color3:         #DAA520
+*color11:        #FFC125
+!blue
+*color4:         #6F99B4
+*color12:        #7C96B0
+!magenta
+*color5:         #8B7B8B
+*color13:        #D8BFD8
+!cyan
+*color6:         #A7A15E
+*color14:        #F0E68C
+!white
+*color7:         #DDDDDD
+*color15:        #FFFFFF
+
+*foreground: #DDDDDD
+
+#urxvt*cursorColor: #f0f0f0
+#urxvt*background:  #000000
+#urxvt*foreground:  #ffffff
+#URxvt*color0:      #000000
+#URxvt*color1:      #A80000
+#URxvt*color2:      #00A800
+#URxvt*color3:      #A85400
+#URxvt*color4:      #0000A8
+#URxvt*color5:      #FF00FF
+#URxvt*color6:      #00A8A8
+#URxvt*color7:      #A8A8A8
+#URxvt*color8:      #545054
+#URxvt*color9:      #F85450
+#URxvt*color10:     #50FC50
+#URxvt*color11:     #F2FC50
+#URxvt*color12:     #5054F8
+#URxvt*color13:     #F854F8
+#URxvt*color14:     #50FCF8
+#URxvt*color15:     #F8FCF8
