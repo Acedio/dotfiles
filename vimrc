@@ -1,4 +1,4 @@
-color desert
+color molokai
 
 " do not wrap lines
 set nowrap
