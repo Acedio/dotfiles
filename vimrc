@@ -13,6 +13,9 @@ set smartcase
 " don't use the mouse
 set mouse-=a
 
+" make sure backspace works as expected
+set bs=2
+
 " tabs and indents are 4 spaces rather than one 8-wide tab
 set tabstop=4
 set shiftwidth=4
