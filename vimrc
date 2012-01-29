@@ -65,3 +65,19 @@ set hlsearch
 
 " remove highlighting with ,n
 nmap <silent> <leader>n :silent :nohlsearch<CR>
+
+" statusline
+set laststatus=2
+set statusline=
+set statusline +=\ [%n]\    "buffer number
+set statusline +=%<%F       "full path
+set statusline +=%m         "modified flag
+set statusline +=%=%l\,     "current line
+set statusline +=%c\        "column number
+set statusline +=\ %P       " % through the file
+
+" show command building on the status line
+set showcmd
+
+" show relative numbers for vertical movement
+set relativenumber
