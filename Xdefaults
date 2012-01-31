@@ -6,6 +6,8 @@ urxvt.secondaryScroll: true
 #urxvt.boldFont: xft:ProggySquareTTSZ:pixelsize=18:antialias=true
 URxvt.font: xft:terminus:size=12:antialias=true
 URxvt.boldFont: xft:terminus:bold:size=12:antialias=true
+rxvt.font: consolas-16
+rxvt.boldFont: consolas-16
 urxvt.urlLauncher: firefox
 urxvt.depth: 32
 urxvt.tint: black
