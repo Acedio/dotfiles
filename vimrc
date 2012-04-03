@@ -81,3 +81,6 @@ set showcmd
 
 " show relative numbers for vertical movement
 set relativenumber
+
+" show non-printing characters in <xx> format rather than ^X
+set display=uhex
