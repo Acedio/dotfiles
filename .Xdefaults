@@ -1,6 +1,11 @@
 *saveLines: 65535
+
+! rxvt in Windows, scrollbar
 rxvt.scrollBar: true
 rxvt.scrollBar_right: true
+
+! urxvt in Linux, no scrollbar
+urxvt.scrollBar: false
 
 rxvt.scrollTtyOutput: false
 rxvt.scrollTtyOutput: false
