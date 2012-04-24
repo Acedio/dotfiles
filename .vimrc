@@ -32,9 +32,6 @@ set wildmode=list:longest
 map <F10> <Esc>:setlocal spell! spelllang=en_us<CR>
 map <F11> <Esc>:setlocal nospell<CR>
 
-nnoremap <silent> <C-l> :nohl<CR><C-l>
-au FileType * setl fo-=cro
-
 " recommendations from http://items.sjbach.com/319/configuring-vim-right
 " remember marks and undo history for hidden buffers
 set hidden
@@ -84,3 +81,6 @@ set relativenumber
 
 " show non-printing characters in <xx> format rather than ^X
 set display=uhex
+
+" GLSL filetype
+au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl
