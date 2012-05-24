@@ -1,3 +1,6 @@
+" pathogen for managing plugins
+call pathogen#infect()
+
 color molokai
 
 " do not wrap lines
