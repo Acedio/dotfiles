@@ -8,7 +8,7 @@ rxvt.scrollBar_right: true
 urxvt.scrollBar: false
 
 rxvt.scrollTtyOutput: false
-rxvt.scrollTtyOutput: false
+rxvt.scrollTtyKeypress: true
 rxvt.scrollWithBuffer: true
 
 urxvt.secondaryScroll: true
