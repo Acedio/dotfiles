@@ -87,3 +87,6 @@ set display=uhex
 
 " GLSL filetype
 au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl
+
+" Pathogen
+call pathogen#infect()
