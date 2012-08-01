@@ -87,3 +87,16 @@ set display=uhex
 
 " GLSL filetype
 au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl
+
+" Insert multiple lines
+function! OpenLines(nrlines, dir)
+    call append(line('.')+a:dir, repeat([''], a:nrlines))
+    if a:dir < 0
+        execute "normal " . a:nrlines . "k"
+    else
+        execute "normal " . a:nrlines . "j"
+    endif
+endfunction
+
+nnoremap <Leader>o :<C-u>call OpenLines(v:count1, 0)<CR>S
+nnoremap <Leader>O :<C-u>call OpenLines(v:count1, -1)<CR>S
