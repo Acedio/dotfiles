@@ -1,5 +1,19 @@
-" pathogen for managing plugins
-call pathogen#infect()
+set nocompatible
+filetype off
+
+" Set up the rtp for Vundle and make sure that .vim is added for Windows.
+set rtp+=~/.vim,~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" Bundles
+Bundle 'tomasr/molokai'
+Bundle 'anzaika/go.vim'
+Bundle 'glsl.vim'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-markdown'
 
 set background=dark
 
@@ -58,9 +72,7 @@ set ruler
 
 " just incase the /etc/vimrc file doesn't have these set
 syntax on
-filetype on
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 
 " highlighting when searching
 set hlsearch
@@ -102,3 +114,9 @@ endfunction
 
 nnoremap <Leader>o :<C-u>call OpenLines(v:count1, 0)<CR>S
 nnoremap <Leader>O :<C-u>call OpenLines(v:count1, -1)<CR>S
+
+function! DoXmlLint() range
+    silent execute a:firstline . "," . a:lastline . '!xmllint --format -'
+endfunction
+
+command! XmlLint %call DoXmlLint()
