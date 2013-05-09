@@ -15,6 +15,7 @@ Bundle 'glsl.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-markdown'
 Bundle 'PProvost/vim-ps1'
+Bundle 'OmniCppComplete'
 
 set background=dark
 
@@ -22,6 +23,9 @@ color molokai
 
 " do not wrap lines
 set nowrap
+
+" unicode
+set encoding=utf-8
 
 " stay at the current indentation level on new lines
 set autoindent
