@@ -15,8 +15,8 @@ urxvt.secondaryScroll: true
 
 urxvt.font: xft:terminus:size=12:antialias=true
 urxvt.boldFont: xft:terminus:bold:size=12:antialias=true
-rxvt.font: consolas-16
-rxvt.boldFont: consolas-16
+!rxvt.font: consolas-16
+!rxvt.boldFont: consolas-16
 
 urxvt.urlLauncher: chromium
 urxvt.depth: 32

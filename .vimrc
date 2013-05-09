@@ -14,6 +14,7 @@ Bundle 'anzaika/go.vim'
 Bundle 'glsl.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-markdown'
+Bundle 'PProvost/vim-ps1'
 
 set background=dark
 
