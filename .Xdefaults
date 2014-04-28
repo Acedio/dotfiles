@@ -4,25 +4,25 @@
 rxvt.scrollBar: true
 rxvt.scrollBar_right: true
 
-! urxvt in Linux, no scrollbar
-urxvt.scrollBar: false
+! URxvt in Linux, no scrollbar
+URxvt.scrollBar: false
 
 rxvt.scrollTtyOutput: false
 rxvt.scrollTtyKeypress: true
 rxvt.scrollWithBuffer: true
 
-urxvt.secondaryScroll: true
+URxvt.secondaryScroll: true
 
-urxvt.font: xft:terminus:size=12:antialias=true
-urxvt.boldFont: xft:terminus:bold:size=12:antialias=true
+URxvt.font: xft:terminus:size=12:antialias=true
+URxvt.boldFont: xft:terminus:bold:size=12:antialias=true
 !rxvt.font: consolas-16
 !rxvt.boldFont: consolas-16
 
-urxvt.urlLauncher: chromium
-urxvt.depth: 32
-urxvt.tint: black
+URxvt.urlLauncher: chromium
+URxvt.depth: 32
+URxvt.tint: black
 
-urxvt.keysym.C-Tab:	\033<C-Tab>
+URxvt.keysym.C-Tab:	\033<C-Tab>
 
 ! --- ~/.Xresources ------------------------------------------------------------
 ! ------------------------------------------------------------------------------
