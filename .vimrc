@@ -15,10 +15,25 @@ Bundle 'glsl.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-markdown'
 Bundle 'PProvost/vim-ps1'
-Bundle 'OmniCppComplete'
+Bundle 'ciaranm/inkpot'
+Bundle 'kien/ctrlp.vim'
+
+if filereadable(expand('~/.at_work'))
+  " Work only
+  source ~/.vimrc_local
+else
+  " Non-work only
+  Bundle 'OmniCppComplete'
+endif
+
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_root_markers = ['.ctrlp']
+
+nnoremap <C-P> :CtrlPMRUFiles<CR>
 
 set background=dark
 
+let g:rehash256 = 1
 color molokai
 
 " do not wrap lines

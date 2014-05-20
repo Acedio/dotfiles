@@ -1,4 +1,5 @@
 vbell off
-defscrollback 1024
+defscrollback 9999
 hardstatus alwayslastline
 hardstatus string '%{= kK}%-Lw%{= KW}%50>%n%f* %t%{= kK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
+term screen-256color
