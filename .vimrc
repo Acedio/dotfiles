@@ -23,13 +23,16 @@ if filereadable(expand('~/.at_work'))
   source ~/.vimrc_local
 else
   " Non-work only
-  Bundle 'OmniCppComplete'
+  Bundle 'Valloric/YouCompleteMe'
+  let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 endif
 
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_root_markers = ['.ctrlp']
 
 nnoremap <C-P> :CtrlPMRUFiles<CR>
+
+autocmd! BufNewFile,BufRead *.ino setlocal ft=cpp
 
 set background=dark
 
