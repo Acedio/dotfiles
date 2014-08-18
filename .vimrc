@@ -18,6 +18,9 @@ Bundle 'PProvost/vim-ps1'
 Bundle 'ciaranm/inkpot'
 Bundle 'kien/ctrlp.vim'
 
+" leader is usually \, changing to a non-pinky option
+let mapleader = ","
+
 if filereadable(expand('~/.at_work'))
   " Work only
   source ~/.vimrc_local
@@ -28,6 +31,7 @@ endif
 
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_root_markers = ['.ctrlp']
+let g:ctrlp_max_files = 1000
 
 nnoremap <C-P> :CtrlPMRUFiles<CR>
 
@@ -49,8 +53,8 @@ set autoindent
 set ignorecase
 set smartcase
 
-" don't use the mouse
-set mouse-=a
+" use the mouse
+set mouse=a
 
 " make sure backspace works as expected
 set bs=2
@@ -74,9 +78,6 @@ map <F11> <Esc>:setlocal nospell<CR>
 " recommendations from http://items.sjbach.com/319/configuring-vim-right
 " remember marks and undo history for hidden buffers
 set hidden
-
-" leader is usually
-let mapleader = ","
 
 " remember lots of ex commands and search patterns
 set history=1000
@@ -118,6 +119,9 @@ set relativenumber
 
 " show non-printing characters in <xx> format rather than ^X
 set display=uhex
+
+" don't automatically go to the start of the line when using ^D et. al.
+set nosol
 
 " GLSL filetype
 au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl
