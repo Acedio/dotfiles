@@ -18,9 +18,9 @@ URxvt.boldFont: xft:terminus:bold:size=12:antialias=true
 !rxvt.font: consolas-16
 !rxvt.boldFont: consolas-16
 
-URxvt.urlLauncher: chromium
-URxvt.depth: 32
-URxvt.tint: black
+urxvt.urlLauncher: chromium
+!urxvt.depth: 32 ! this seems to have broken Japanese input... Removing for now.
+urxvt.tint: black
 
 URxvt.keysym.C-Tab:	\033<C-Tab>
 

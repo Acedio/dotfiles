@@ -1,3 +1,7 @@
 [ui]
 username = Josh Simmons <josh.simmons@gmail.com>
 verbose = True
+[extensions]
+hgext.extdiff =
+[extdiff]
+cmd.meld =
