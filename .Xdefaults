@@ -63,7 +63,7 @@ URxvt.keysym.C-Tab:	\033<C-Tab>
 *color11: #a1d757
 
 ! blue
-*color4: #612cdd
+*color4: #915cdd
 
 ! bright_blue
 *color12: #7647e6
