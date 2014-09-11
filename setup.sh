@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ln -s dotfiles/.vimrc dotfiles/.gvimrc dotfiles/.hgrc dotfiles/.Xdefaults dotfiles/.screenrc dotfiles/.tmux.conf ~
+ln -s dotfiles/.Xdefaults dotfiles/.gitconfig dotfiles/.gvimrc dotfiles/.hgrc dotfiles/.screenrc dotfiles/.tmux.conf dotfiles/.vimrc ~
 
 git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
 vim +PluginInstall +qall
