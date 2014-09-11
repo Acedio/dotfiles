@@ -126,6 +126,9 @@ set display=uhex
 " don't automatically go to the start of the line when using ^D et. al.
 set nosol
 
+" don't copy to X copy buffer immediately on visual select
+set clipboard=
+
 " GLSL filetype
 au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl
 
