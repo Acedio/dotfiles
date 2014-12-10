@@ -9,14 +9,16 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Bundles
-Bundle 'tomasr/molokai'
-Bundle 'anzaika/go.vim'
-Bundle 'glsl.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-markdown'
 Bundle 'PProvost/vim-ps1'
+Bundle 'anzaika/go.vim'
 Bundle 'ciaranm/inkpot'
+Bundle 'glsl.vim'
 Bundle 'kien/ctrlp.vim'
+Bundle 'tomasr/molokai'
+Bundle 'tpope/vim-dispatch'
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
 
 " leader is usually \, changing to a non-pinky option
 let mapleader = ","
