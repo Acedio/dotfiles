@@ -40,9 +40,9 @@ set mouse-=a
 " make sure backspace works as expected
 set bs=2
 
-" tabs and indents are 4 spaces rather than one 8-wide tab
-set tabstop=4
-set shiftwidth=4
+" tabs and indents are 2 spaces rather than one 8-wide tab
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 " we can delete tabs in one swoop at the beginning of a line
