@@ -4,89 +4,42 @@
 rxvt.scrollBar: true
 rxvt.scrollBar_right: true
 
-! urxvt in Linux, no scrollbar
-urxvt.scrollBar: false
+! URxvt in Linux, no scrollbar
+URxvt.scrollBar: false
 
 rxvt.scrollTtyOutput: false
 rxvt.scrollTtyKeypress: true
 rxvt.scrollWithBuffer: true
 
-urxvt.secondaryScroll: true
+URxvt.secondaryScroll: true
 
-urxvt.font: xft:terminus:size=12:antialias=true
-urxvt.boldFont: xft:terminus:bold:size=12:antialias=true
+URxvt.font: xft:terminus:size=12:antialias=true
+URxvt.boldFont: xft:terminus:bold:size=12:antialias=true
 !rxvt.font: consolas-16
 !rxvt.boldFont: consolas-16
 
 urxvt.urlLauncher: chromium
-urxvt.depth: 32
+!urxvt.depth: 32 ! this seems to have broken Japanese input... Removing for now.
 urxvt.tint: black
 
-urxvt.keysym.C-Tab:	\033<C-Tab>
+URxvt.keysym.C-Tab:	\033<C-Tab>
 
-! --- ~/.Xresources ------------------------------------------------------------
-! ------------------------------------------------------------------------------
-! --- generated with 4bit Terminal Color Scheme Designer -----------------------
-! ------------------------------------------------------------------------------
-! --- http://ciembor.github.com/4bit -------------------------------------------
-! ------------------------------------------------------------------------------
-
-! --- special colors ---
-
-*background: #0d1926
-*foreground: #d9e6f2
-
-! --- standard colors ---
-
-! black
-*color0: #292c3c
-
-! bright_black
-*color8: #5d6070
-
-! red
-*color1: #ca643c
-
-! bright_red
-*color9: #d47957
-
-! green
-*color2: #29cd74
-
-! bright_green
-*color10: #44d789
-
-! yellow
-*color3: #92cd3c
-
-! bright_yellow
-*color11: #a1d757
-
-! blue
-*color4: #612cdd
-
-! bright_blue
-*color12: #7647e6
-
-! cyan
-*color5: #2995dd
-
-! bright_cyan
-*color13: #44a4e6
-
-! magenta
-*color6: #ca2ca5
-
-! bright_magenta
-*color14: #d447b4
-
-! white
-*color7: #b4b7c7
-
-! bright_white
-*color15: #d4d7e7
-
-
-! ------------------------------------------------------------------------------
-! --- end of terminal colors section -------------------------------------------
-! ------------------------------------------------------------------------------
+!Theme Fifteen
+*background: rgb:1d/2b/3a
+*foreground: rgb:de/de/de
+*color0:     rgb:00/00/00
+*color1:     rgb:d3/62/65
+*color2:     rgb:ae/ce/91
+*color3:     rgb:e7/e1/8c
+*color4:     rgb:7a/7a/b0
+*color5:     rgb:96/3c/59
+*color6:     rgb:41/81/79
+*color7:     rgb:de/de/de
+*color8:     rgb:66/66/66
+*color9:     rgb:ef/81/71
+*color10:    rgb:e5/f7/79
+*color11:    rgb:ff/f7/99
+*color12:    rgb:41/86/be
+*color13:    rgb:ef/9e/be
+*color14:    rgb:71/be/be
+*color15:    rgb:ff/ff/ff

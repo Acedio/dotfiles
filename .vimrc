@@ -9,16 +9,40 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Bundles
-Bundle 'tomasr/molokai'
-Bundle 'anzaika/go.vim'
-Bundle 'glsl.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-markdown'
 Bundle 'PProvost/vim-ps1'
-Bundle 'OmniCppComplete'
+Bundle 'anzaika/go.vim'
+Bundle 'ciaranm/inkpot'
+Bundle 'glsl.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tomasr/molokai'
+Bundle 'tpope/vim-dispatch'
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
+
+" leader is usually \, changing to a non-pinky option
+let mapleader = ","
+
+if filereadable(expand('~/.at_work'))
+  " Work only
+  source ~/.vimrc_local
+else
+  " Non-work only
+  Bundle 'Valloric/YouCompleteMe'
+  let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+endif
+
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_root_markers = ['.ctrlp']
+let g:ctrlp_max_files = 1000
+
+nnoremap <C-P> :CtrlPMRUFiles<CR>
+
+autocmd! BufNewFile,BufRead *.ino setlocal ft=cpp
 
 set background=dark
 
+let g:rehash256 = 1
 color molokai
 
 " do not wrap lines
@@ -34,8 +58,8 @@ set autoindent
 set ignorecase
 set smartcase
 
-" don't use the mouse
-set mouse-=a
+" use the mouse
+set mouse=a
 
 " make sure backspace works as expected
 set bs=2
@@ -59,9 +83,6 @@ map <F11> <Esc>:setlocal nospell<CR>
 " recommendations from http://items.sjbach.com/319/configuring-vim-right
 " remember marks and undo history for hidden buffers
 set hidden
-
-" leader is usually
-let mapleader = ","
 
 " remember lots of ex commands and search patterns
 set history=1000
@@ -103,6 +124,12 @@ set relativenumber
 
 " show non-printing characters in <xx> format rather than ^X
 set display=uhex
+
+" don't automatically go to the start of the line when using ^D et. al.
+set nosol
+
+" don't copy to X copy buffer immediately on visual select
+set clipboard=
 
 " GLSL filetype
 au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl

@@ -1,0 +1,13 @@
+[user]
+	email = jds@google.com
+	name = Josh Simmons
+[diff]
+	external = git-diff-wrapper.sh
+	tool = vimdiff
+	guitool = tkdiff
+[pager]
+    diff = 
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false
