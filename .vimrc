@@ -23,7 +23,7 @@ Bundle 'tpope/vim-unimpaired'
 " leader is usually \, changing to a non-pinky option
 let mapleader = ","
 
-if filereadable(expand('~/.at_work'))
+if filereadable(expand('~/.vimrc_local'))
   " Work only
   source ~/.vimrc_local
 else
