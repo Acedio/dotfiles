@@ -40,6 +40,9 @@ nnoremap <C-P> :CtrlPMRUFiles<CR>
 
 autocmd! BufNewFile,BufRead *.ino setlocal ft=cpp
 
+" do not un-indent lines that look like label:s
+autocmd FileType cpp setlocal cinoptions+=L0
+
 set background=dark
 
 let g:rehash256 = 1
@@ -130,6 +133,9 @@ set nosol
 
 " don't copy to X copy buffer immediately on visual select
 set clipboard=
+
+" jump between and highlight < angle brackets >
+set mps+=<:>
 
 " GLSL filetype
 au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl

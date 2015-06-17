@@ -18,7 +18,9 @@ URxvt.boldFont: xft:terminus:bold:size=12:antialias=true
 !rxvt.font: consolas-16
 !rxvt.boldFont: consolas-16
 
-urxvt.urlLauncher: chromium
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
 !urxvt.depth: 32 ! this seems to have broken Japanese input... Removing for now.
 urxvt.tint: black
 
