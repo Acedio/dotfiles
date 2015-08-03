@@ -19,6 +19,9 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'jnurmine/Zenburn'
+Bundle 'vim-scripts/Wombat'
+Bundle 'nanotech/jellybeans.vim'
 
 " leader is usually \, changing to a non-pinky option
 let mapleader = ","
@@ -47,6 +50,9 @@ set background=dark
 
 let g:rehash256 = 1
 color molokai
+
+" Fix lame diff highlighting
+highlight DiffText cterm=bold ctermbg=22
 
 " do not wrap lines
 set nowrap
