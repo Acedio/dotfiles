@@ -46,13 +46,14 @@ autocmd! BufNewFile,BufRead *.ino setlocal ft=cpp
 " do not un-indent lines that look like label:s
 autocmd FileType cpp setlocal cinoptions+=L0
 
+syntax on
 set background=dark
 
 let g:rehash256 = 1
 color molokai
 
 " Fix lame diff highlighting
-highlight DiffText cterm=bold ctermbg=22
+hi DiffText term=reverse cterm=bold ctermbg=22
 
 " do not wrap lines
 set nowrap
@@ -106,7 +107,6 @@ set scrolloff=3
 set ruler
 
 " just incase the /etc/vimrc file doesn't have these set
-syntax on
 filetype plugin indent on
 
 " highlighting when searching
