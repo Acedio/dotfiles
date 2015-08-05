@@ -19,6 +19,7 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'jpalardy/vim-slime'
 Bundle 'jnurmine/Zenburn'
 Bundle 'vim-scripts/Wombat'
 Bundle 'nanotech/jellybeans.vim'
@@ -142,6 +143,9 @@ set clipboard=
 
 " jump between and highlight < angle brackets >
 set mps+=<:>
+
+" vim-slime should use tmux
+let g:slime_target = "tmux"
 
 " GLSL filetype
 au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl
