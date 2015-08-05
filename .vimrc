@@ -13,7 +13,6 @@ Bundle 'PProvost/vim-ps1'
 Bundle 'anzaika/go.vim'
 Bundle 'ciaranm/inkpot'
 Bundle 'glsl.vim'
-Bundle 'kien/ctrlp.vim'
 Bundle 'tomasr/molokai'
 Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-markdown'
@@ -23,6 +22,9 @@ Bundle 'jpalardy/vim-slime'
 Bundle 'jnurmine/Zenburn'
 Bundle 'vim-scripts/Wombat'
 Bundle 'nanotech/jellybeans.vim'
+
+" fzf plugin location
+set rtp+=~/fzf
 
 " leader is usually \, changing to a non-pinky option
 let mapleader = ","
@@ -36,11 +38,7 @@ else
   let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 endif
 
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_root_markers = ['.ctrlp']
-let g:ctrlp_max_files = 1000
-
-nnoremap <C-P> :CtrlPMRUFiles<CR>
+nnoremap <C-P> :FZF<CR>
 
 autocmd! BufNewFile,BufRead *.ino setlocal ft=cpp
 
