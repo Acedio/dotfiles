@@ -24,5 +24,5 @@ stty -ixon
 fe() {
   local file
   file=$(fzf --query="$1" --select-1 --exit-0)
-  [ -n "$file" ] && ${EDITOR:-vim} "$file"
+  [ -n "$file" ] && history -s ${EDITOR:-vim} "$file" && ${EDITOR:-vim} "$file"
 }
