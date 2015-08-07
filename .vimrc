@@ -42,8 +42,13 @@ nnoremap <C-P> :FZF<CR>
 
 autocmd! BufNewFile,BufRead *.ino setlocal ft=cpp
 
-" do not un-indent lines that look like label:s
-autocmd FileType cpp setlocal cinoptions+=L0
+" Google style indenting
+autocmd FileType cpp setlocal cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4
+autocmd FileType cpp setlocal textwidth=80
+autocmd FileType cpp setlocal formatoptions+=t
+
+" Color the column after textwidth characters
+set colorcolumn=+1
 
 syntax on
 set background=dark
