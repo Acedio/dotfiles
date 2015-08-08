@@ -7,6 +7,7 @@ export HISTSIZE=10000
 export HISTFILESIZE=20000
 
 # git prompt
+source /usr/share/git/completion/git-prompt.sh
 export PS1='\[\033[00;34m\]\h\[\033[00;37m\]:\[\033[31m\]$(__git_ps1 "(%s)\[\033[01m\]")\[\033[00;32m\]\w\[\033[00m\]$ '
 
 # VI mode in BASH readline
