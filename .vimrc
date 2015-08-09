@@ -36,6 +36,9 @@ else
   " Non-work only
   Bundle 'Valloric/YouCompleteMe'
   let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+
+  " clang-format C/C++ code
+  noremap <leader>f :pyf /usr/share/clang/clang-format.py<CR>
 endif
 
 nnoremap <C-P> :FZF<CR>
