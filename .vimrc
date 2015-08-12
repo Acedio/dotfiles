@@ -24,7 +24,7 @@ Bundle 'vim-scripts/Wombat'
 Bundle 'nanotech/jellybeans.vim'
 
 " fzf plugin location
-set rtp+=~/fzf
+set rtp+=~/.fzf
 
 " leader is usually \, changing to a non-pinky option
 let mapleader = ","
