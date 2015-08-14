@@ -20,6 +20,7 @@ export EDITOR=vim
 export VISUAL=vim
 
 # Load up fzf stuff.
+export FZF_DEFAULT_OPTS='-x'
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # fe [FUZZY PATTERN] - Open the selected file with the default editor
@@ -27,6 +28,6 @@ export VISUAL=vim
 #   - Exit if there's no match (--exit-0)
 fe() {
   local file
-  file=$(fzf --query="$1" --select-1 --exit-0)
+  file=$(fzf -x --query="$1" --select-1 --exit-0)
   [ -n "$file" ] && history -s ${EDITOR:-vim} "$file" && ${EDITOR:-vim} "$file"
 }

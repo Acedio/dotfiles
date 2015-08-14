@@ -21,8 +21,10 @@ URxvt.boldFont: xft:terminus:bold:size=12:antialias=true
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
-!urxvt.depth: 32 ! this seems to have broken Japanese input... Removing for now.
-urxvt.tint: black
+
+! Disable annoying iso14755 mode triggering on Ctrl+Shift
+URxvt.iso14755: false
+URxvt.iso14755_52: false
 
 URxvt.keysym.C-Tab:	\033<C-Tab>
 
