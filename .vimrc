@@ -2,27 +2,30 @@ set nocompatible
 filetype off
 
 " Set up the rtp for Vundle and make sure that .vim is added for Windows.
-set rtp+=~/.vim,~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim,~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " Bundles
-Bundle 'PProvost/vim-ps1'
-Bundle 'anzaika/go.vim'
-Bundle 'ciaranm/inkpot'
-Bundle 'glsl.vim'
-Bundle 'tomasr/molokai'
-Bundle 'tpope/vim-dispatch'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'jpalardy/vim-slime'
-Bundle 'jnurmine/Zenburn'
-Bundle 'vim-scripts/Wombat'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'tpope/vim-fugitive'
+Plugin 'PProvost/vim-ps1'
+Plugin 'anzaika/go.vim'
+Plugin 'ciaranm/inkpot'
+Plugin 'glsl.vim'
+Plugin 'tomasr/molokai'
+Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'jpalardy/vim-slime'
+Plugin 'jnurmine/Zenburn'
+Plugin 'vim-scripts/Wombat'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'tpope/vim-fugitive'
+
+call vundle#end()
+filetype plugin indent on
 
 " fzf plugin location
 set rtp+=~/.fzf
@@ -35,8 +38,11 @@ if filereadable(expand('~/.vimrc_local'))
   source ~/.vimrc_local
 else
   " Non-work only
-  Bundle 'Valloric/YouCompleteMe'
+  Plugin 'Valloric/YouCompleteMe'
   let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+
+  " clang-format C/C++ code
+  noremap <leader>f :pyf /usr/share/clang/clang-format.py<CR>
 endif
 
 nnoremap <C-P> :FZF<CR>
@@ -113,9 +119,6 @@ set scrolloff=3
 
 " display line number and position % in the lower right
 set ruler
-
-" just incase the /etc/vimrc file doesn't have these set
-filetype plugin indent on
 
 " highlighting when searching
 set hlsearch
