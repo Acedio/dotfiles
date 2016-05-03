@@ -22,6 +22,7 @@ Bundle 'jpalardy/vim-slime'
 Bundle 'jnurmine/Zenburn'
 Bundle 'vim-scripts/Wombat'
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'tpope/vim-fugitive'
 
 " fzf plugin location
 set rtp+=~/.fzf
@@ -85,6 +86,9 @@ set expandtab
 
 " we can delete tabs in one swoop at the beginning of a line
 set smarttab
+
+" only a single space after a period when joining lines
+set nojoinspaces
 
 " bash-style file autocomplete
 set wildmenu
