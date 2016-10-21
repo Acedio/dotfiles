@@ -54,8 +54,8 @@ autocmd FileType cpp setlocal cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4
 autocmd FileType cpp setlocal textwidth=80
 autocmd FileType cpp setlocal formatoptions+=t
 
-" Color the column after textwidth characters
-set colorcolumn=+1
+" Color the column on col=textwidth
+set colorcolumn=+0
 
 syntax on
 set background=dark
