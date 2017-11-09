@@ -7,7 +7,10 @@ export HISTSIZE=10000
 export HISTFILESIZE=20000
 
 # git prompt
+if [ -e /usr/share/git/completion/git-prompt.sh ]
+then
 source /usr/share/git/completion/git-prompt.sh
+fi
 export PS1='\[\033[00;34m\]\h\[\033[00;37m\]:\[\033[31m\]$(__git_ps1 "(%s)\[\033[01m\]")\[\033[00;32m\]\w\[\033[00m\]$ '
 
 # Prevent ^S from sending the XOFF signal

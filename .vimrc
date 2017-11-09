@@ -25,6 +25,7 @@ Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-scripts/Wombat'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
@@ -56,8 +57,8 @@ autocmd FileType c,cpp setlocal cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4
 autocmd FileType c,cpp setlocal textwidth=80
 autocmd FileType c,cpp setlocal formatoptions+=t
 
-" Color the column after textwidth characters
-set colorcolumn=+1
+" Color the column on col=textwidth
+set colorcolumn=+0
 
 syntax on
 set background=dark
@@ -94,6 +95,9 @@ set expandtab
 
 " we can delete tabs in one swoop at the beginning of a line
 set smarttab
+
+" only a single space after a period when joining lines
+set nojoinspaces
 
 " bash-style file autocomplete
 set wildmenu
