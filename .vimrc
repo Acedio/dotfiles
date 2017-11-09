@@ -1,6 +1,8 @@
 set nocompatible
 filetype off
 
+let g:loaded_youcompleteme = 1
+
 " Set up the rtp for Vundle and make sure that .vim is added for Windows.
 set rtp+=~/.vim,~/.vim/bundle/Vundle.vim/
 call vundle#begin()
@@ -13,15 +15,16 @@ Plugin 'PProvost/vim-ps1'
 Plugin 'anzaika/go.vim'
 Plugin 'ciaranm/inkpot'
 Plugin 'glsl.vim'
+Plugin 'jnurmine/Zenburn'
+Plugin 'jpalardy/vim-slime'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'rust-lang/rust.vim'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'jpalardy/vim-slime'
-Plugin 'jnurmine/Zenburn'
 Plugin 'vim-scripts/Wombat'
-Plugin 'nanotech/jellybeans.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -49,9 +52,9 @@ nnoremap <C-P> :FZF<CR>
 autocmd! BufNewFile,BufRead *.ino setlocal ft=cpp
 
 " Google style indenting
-autocmd FileType cpp setlocal cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4
-autocmd FileType cpp setlocal textwidth=80
-autocmd FileType cpp setlocal formatoptions+=t
+autocmd FileType c,cpp setlocal cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4
+autocmd FileType c,cpp setlocal textwidth=80
+autocmd FileType c,cpp setlocal formatoptions+=t
 
 " Color the column after textwidth characters
 set colorcolumn=+1
@@ -152,6 +155,8 @@ set mps+=<:>
 
 " vim-slime should use tmux
 let g:slime_target = "tmux"
+" fix for unresponsive vim with tmux 2.2
+let g:slime_paste_file = "$HOME/.slime_paste"
 
 " GLSL filetype
 au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl

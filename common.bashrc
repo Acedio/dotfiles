@@ -10,9 +10,6 @@ export HISTFILESIZE=20000
 source /usr/share/git/completion/git-prompt.sh
 export PS1='\[\033[00;34m\]\h\[\033[00;37m\]:\[\033[31m\]$(__git_ps1 "(%s)\[\033[01m\]")\[\033[00;32m\]\w\[\033[00m\]$ '
 
-# VI mode in BASH readline
-set -o vi
-
 # Prevent ^S from sending the XOFF signal
 stty -ixon
 
