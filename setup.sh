@@ -9,6 +9,7 @@ ln -s \
   dotfiles/.tmux.conf \
   dotfiles/.vimrc \
   dotfiles/.inputrc \
+  dotfiles/.guile \
   ~
 
 git clone https://github.com/gmarik/vundle ~/.vim/bundle/Vundle.vim
