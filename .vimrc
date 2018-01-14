@@ -75,9 +75,8 @@ set encoding=utf-8
 " stay at the current indentation level on new lines
 set autoindent
 
-" don't worry about case when searching, unless a cap is used
-set ignorecase
-set smartcase
+" set a reasonable default textwidth
+set textwidth=80
 
 " use the mouse
 set mouse=a
