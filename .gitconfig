@@ -1,6 +1,8 @@
 [user]
 	email = josh.simmons@gmail.com
 	name = Josh Simmons
+[core]
+	editor = vim
 [diff]
 	external = git-diff-wrapper.sh
 	tool = vimdiff
@@ -11,5 +13,7 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+[alias]
+	d = difftool
 [push]
 	default = simple
