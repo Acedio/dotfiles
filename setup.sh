@@ -10,6 +10,8 @@ ln -s \
   dotfiles/.vimrc \
   dotfiles/.inputrc \
   dotfiles/.guile \
+  dotfiles/.stalonetrayrc \
+  dotfiles/.xmobarrc \
   ~
 
 git clone https://github.com/gmarik/vundle ~/.vim/bundle/Vundle.vim
