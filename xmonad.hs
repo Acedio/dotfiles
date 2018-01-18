@@ -4,6 +4,7 @@ import XMonad.Hooks.ManageDocks
 import XMonad.Layout
 import XMonad.Layout.NoBorders
 import XMonad.Util.Paste
+import XMonad.Util.Run
 
 import qualified Data.Map as M
 
