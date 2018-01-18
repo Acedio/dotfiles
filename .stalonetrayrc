@@ -1,0 +1,8 @@
+geometry 1x1+1440+0
+background "#303030"
+decorations none
+icon_size 16
+window_layer bottom
+window_strut top
+grow_gravity E
+icon_gravity NE

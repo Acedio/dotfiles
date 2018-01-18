@@ -15,7 +15,8 @@ main = xmonad =<< xmobar defaultConfig
     , layoutHook=myLayoutHook
     , manageHook=manageHook defaultConfig <+> manageDocks
     , startupHook = spawn "setxkbmap -option 'ctrl:nocaps' &" >>
-                    spawn "killall redshift && redshift -l 47.6494438:-122.3503228 &" >>
+                    spawn "ps -C redshift || gtk-redshift -l 47.6494438:-122.3503228 &" >>
+                    spawn "ps -C stalonetray || stalonetray &" >>
                     spawn "xscreensaver -no-splash &"
     }
 

@@ -1,9 +1,9 @@
-Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
+Config { font = "-misc-fixed-*-*-*-*-12-*-*-*-*-*-*-*"
        , additionalFonts = []
-       , borderColor = "black"
+       , borderColor = "#303030"
        , border = TopB
-       , bgColor = "black"
-       , fgColor = "grey"
+       , bgColor = "#303030"
+       , fgColor = "#bcbcbc"
        , alpha = 255
        , position = Top
        , textOffset = -1
