@@ -4,16 +4,18 @@ import XMonad.Hooks.ManageDocks
 import XMonad.Layout
 import XMonad.Layout.NoBorders
 import XMonad.Util.Paste
+import XMonad.Util.Run
 
 import qualified Data.Map as M
 
-main = xmonad =<< xmobar defaultConfig
+main = xmonad =<< xmobar myConfig
+myConfig = defaultConfig
     { terminal    = "urxvt"
     , modMask     = mod4Mask
     , borderWidth = 1
     , keys = myKeys
     , layoutHook=myLayoutHook
-    , manageHook=manageHook defaultConfig <+> manageDocks
+    , manageHook=manageDocks <+> manageHook defaultConfig
     , startupHook = spawn "setxkbmap -option 'ctrl:nocaps' &" >>
                     spawn "ps -C redshift || gtk-redshift -l 47.6494438:-122.3503228 &" >>
                     spawn "ps -C stalonetray || stalonetray &" >>
@@ -23,7 +25,7 @@ main = xmonad =<< xmobar defaultConfig
 -- Union default and new key bindings
 myKeys x  = M.union (M.fromList (newKeys x)) (keys defaultConfig x)
 
-myLayoutHook = (avoidStruts tall ||| avoidStruts Mirror tall ||| noBorders Full)
+myLayoutHook = (avoidStruts tall ||| avoidStruts (Mirror tall) ||| noBorders Full)
                    where tall = Tall 1 0.03 0.5
 
 -- Add new and/or redefine key bindings
