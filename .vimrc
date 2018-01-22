@@ -5,29 +5,35 @@ let g:loaded_youcompleteme = 1
 
 " Set up the rtp for Vundle and make sure that .vim is added for Windows.
 set rtp+=~/.vim,~/.vim/bundle/Vundle.vim/
-call vundle#begin()
+if isdirectory(expand('$HOME/.vim/bundle/Vundle.vim'))
+  call vundle#begin()
 
-" Let Vundle manage Vundle
-Plugin 'VundleVim/Vundle.vim'
+  " Let Vundle manage Vundle
+  Plugin 'VundleVim/Vundle.vim'
 
-" Bundles
-Plugin 'PProvost/vim-ps1'
-Plugin 'anzaika/go.vim'
-Plugin 'ciaranm/inkpot'
-Plugin 'glsl.vim'
-Plugin 'jnurmine/Zenburn'
-Plugin 'jpalardy/vim-slime'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'rust-lang/rust.vim'
-Plugin 'tomasr/molokai'
-Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-markdown'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'vim-scripts/Wombat'
-Plugin 'tpope/vim-fugitive'
+  " Bundles
+  Plugin 'PProvost/vim-ps1'
+  Plugin 'anzaika/go.vim'
+  Plugin 'ciaranm/inkpot'
+  Plugin 'glsl.vim'
+  Plugin 'jnurmine/Zenburn'
+  Plugin 'jpalardy/vim-slime'
+  Plugin 'nanotech/jellybeans.vim'
+  Plugin 'rust-lang/rust.vim'
+  Plugin 'tomasr/molokai'
+  Plugin 'tpope/vim-dispatch'
+  Plugin 'tpope/vim-markdown'
+  Plugin 'tpope/vim-surround'
+  Plugin 'tpope/vim-unimpaired'
+  Plugin 'vim-scripts/Wombat'
+  Plugin 'tpope/vim-fugitive'
 
-call vundle#end()
+  call vundle#end()
+else
+  echomsg 'Vundle is not installed. You can install Vundle from'
+      \ 'https://github.com/VundleVim/Vundle.vim'
+endif
+
 filetype plugin indent on
 
 " fzf plugin location
