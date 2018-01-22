@@ -1,8 +1,6 @@
 set nocompatible
 filetype off
 
-let g:loaded_youcompleteme = 1
-
 " Set up the rtp for Vundle and make sure that .vim is added for Windows.
 set rtp+=~/.vim,~/.vim/bundle/Vundle.vim/
 if isdirectory(expand('$HOME/.vim/bundle/Vundle.vim'))
