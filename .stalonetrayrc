@@ -6,3 +6,4 @@ window_layer bottom
 window_strut top
 grow_gravity E
 icon_gravity NE
+kludges force_icons_size
