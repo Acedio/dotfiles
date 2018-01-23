@@ -4,7 +4,6 @@
 [core]
 	editor = vim
 [diff]
-	external = git-diff-wrapper.sh
 	tool = vimdiff
 	guitool = tkdiff
 [pager]
