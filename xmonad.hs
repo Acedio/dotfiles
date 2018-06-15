@@ -34,5 +34,6 @@ newKeys conf@(XConfig {XMonad.modMask = modm}) = [
   , ((controlMask.|.shiftMask , xK_equal  ), spawn "volctl plus")
   , ((controlMask.|.shiftMask , xK_minus  ), spawn "volctl minus")
   , ((mod4Mask                , xK_b      ), sendMessage ToggleStruts)
+  , ((mod4Mask                , xK_c      ), spawn "xdg-open about:newtab")
   , ((shiftMask               , xK_Insert ), pasteSelection)
    ]
