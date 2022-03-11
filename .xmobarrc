@@ -15,12 +15,7 @@ Config { font = "-misc-fixed-*-*-*-*-12-*-*-*-*-*-*-*"
        , iconRoot = "."
        , allDesktops = True
        , overrideRedirect = True
-       , commands = [ Run Weather "EGPF" ["-t","<station>: <tempC>C",
-                                          "-L","18","-H","25",
-                                          "--normal","green",
-                                          "--high","red",
-                                          "--low","lightblue"] 36000
-                    , Run Network "eth0" ["-m","4","-L","0","-H","32",
+       , commands = [ Run Network "eth0" ["-m","4","-L","0","-H","32",
                                           "--normal","green","--high","red"] 10
                     , Run Cpu ["-p","2","-L","3","-H","50",
                                "--normal","green","--high","red"] 10

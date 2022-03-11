@@ -13,8 +13,8 @@ rxvt.scrollWithBuffer: true
 
 URxvt.secondaryScroll: true
 
-URxvt.font: xft:terminus:size=12:antialias=true
-URxvt.boldFont: xft:terminus:bold:size=12:antialias=true
+URxvt.font: xft:cascadia:size=12:antialias=true
+URxvt.boldFont: xft:cascadia:bold:size=12:antialias=true
 !rxvt.font: consolas-16
 !rxvt.boldFont: consolas-16
 
@@ -25,6 +25,8 @@ URxvt.matcher.button: 1
 ! Disable annoying iso14755 mode triggering on Ctrl+Shift
 URxvt.iso14755: false
 URxvt.iso14755_52: false
+
+URxvt.preeditType: OverTheSpot
 
 URxvt.keysym.C-Tab:	\033<C-Tab>
 
