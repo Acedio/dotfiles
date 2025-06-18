@@ -25,6 +25,7 @@ if isdirectory(expand('$HOME/.vim/bundle/Vundle.vim'))
   Plugin 'tpope/vim-unimpaired'
   Plugin 'vim-scripts/Wombat'
   Plugin 'tpope/vim-fugitive'
+  Plugin 'bullets-vim/bullets.vim'
 
   call vundle#end()
 else
@@ -186,3 +187,8 @@ function! DoXmlLint() range
 endfunction
 
 command! XmlLint %call DoXmlLint()
+
+let g:bullets_custom_mappings = [
+  \ ['imap', '<Tab>', '<Plug>(bullets-demote)'],
+  \ ['imap', '<S-Tab>', '<Plug>(bullets-promote)'],
+  \ ]
