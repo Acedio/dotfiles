@@ -192,3 +192,5 @@ let g:bullets_custom_mappings = [
   \ ['imap', '<Tab>', '<Plug>(bullets-demote)'],
   \ ['imap', '<S-Tab>', '<Plug>(bullets-promote)'],
   \ ]
+
+let g:bullets_outline_levels = ['ROM', 'ABC', 'num', 'abc', 'rom', 'std-']
