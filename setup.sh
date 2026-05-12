@@ -14,6 +14,8 @@ ln -s \
   dotfiles/.xmobarrc \
   ~
 
+ln -s dotfiles/kitty ~/.config/
+
 git clone https://github.com/gmarik/vundle ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
