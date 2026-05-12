@@ -11,7 +11,7 @@ import qualified Data.Map as M
 
 main = xmonad =<< xmobar myConfig
 myConfig = def
-    { terminal    = "urxvt"
+    { terminal    = "kitty"
     , modMask     = mod4Mask
     , borderWidth = 1
     , keys        = myKeys
