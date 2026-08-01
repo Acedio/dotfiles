@@ -1,0 +1,9 @@
+#:schema https://docs.jj-vcs.dev/latest/config-schema.json
+
+[user]
+name = "Josh Simmons"
+email = "josh.simmons@gmail.com"
+
+[ui]
+diff-editor="vimdirdiff"
+default-command = "log"

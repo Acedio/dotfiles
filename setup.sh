@@ -12,9 +12,12 @@ ln -s \
   dotfiles/.guile \
   dotfiles/.stalonetrayrc \
   dotfiles/.xmobarrc \
+  dotfiles/.jjconfig.toml \
   ~
 
-ln -s dotfiles/kitty ~/.config/
+ln -s ~/dotfiles/kitty ~/.config/
+
+ln -s ~/dotfiles/bin/vimdirdiff ~/bin/
 
 git clone https://github.com/gmarik/vundle ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall

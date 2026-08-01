@@ -26,6 +26,7 @@ if isdirectory(expand('$HOME/.vim/bundle/Vundle.vim'))
   Plugin 'vim-scripts/Wombat'
   Plugin 'tpope/vim-fugitive'
   Plugin 'bullets-vim/bullets.vim'
+  Plugin 'will133/vim-dirdiff'
 
   call vundle#end()
 else
